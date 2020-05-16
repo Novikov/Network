@@ -1,4 +1,4 @@
-package basics._2_coppy_array_bytes;
+package _1_basics._2_coppy_array_bytes;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ public class CopyArrayBytes {
         //Try с инициализацией ресурсов в скобках. Все ресурсы автоматически закрываются при выходе из try.
         //Причем не важно словили мы исключение или нет.
         try (InputStream is = new FileInputStream("1.jpeg");
-             OutputStream os = new FileOutputStream("3.jpeg");) {
+             OutputStream os = new FileOutputStream("3.jpeg",true);) {
             byte [] buffer = new byte[4096];
 
             int r = is.read(buffer);

@@ -1,4 +1,4 @@
-package basics._1_copy_bite;
+package _1_basics._1_copy_bite;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
